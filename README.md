@@ -108,10 +108,6 @@ For detailed instructions, see the **complete tutorial** in this repository.
 | `README.fr.md` | French overview |
 | `TUTORIAL.md` | Complete English installation guide |
 | `TUTORIAL.fr.md` | Complete French installation guide |
-| `EXAMPLES.md` | Dummy IP/domain examples for reference |
-| `TROUBLESHOOTING.md` | 15+ common issues and solutions |
-| `CONTRIBUTING.md` | How to contribute improvements |
-| `LICENSE` | MIT License |
 
 ---
 
@@ -145,7 +141,7 @@ For detailed instructions, see the **complete tutorial** in this repository.
                         │ Port 80/443 (Public IP)
                         ▼
             ┌───────────────────────┐
-            │  Router/Firewall/Bbox │
+            │  Router/Firewall │
             │  192.168.1.1          │
             └───────────┬───────────┘
                         │ Port Forwarding
@@ -277,8 +273,6 @@ sudo systemctl status certbot.timer
 sudo certbot renew --dry-run
 ```
 
-See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for 15+ additional solutions.
-
 ---
 
 ## Default Credentials
@@ -340,26 +334,10 @@ curl -I https://guacamole.example.com/ 2>/dev/null | grep "HTTP"
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Areas for contribution:**
-- Additional protocol examples (RDP, SSH, VNC)
-- Ansible playbooks for automation
-- Docker containerization
-- Kubernetes deployment manifests
-- CI/CD pipeline examples
-- Performance tuning guides
-
----
-
 ## Contributors
 
-- **Tutorial Creator**: [Your Name/GitHub]
-- **Technical Advisor**: Maxence Dulche ([@maxencedulche](https://github.com/maxencedulche))
-- **Contributors Welcome**: See [CONTRIBUTING.md](CONTRIBUTING.md)
-
+- **Tutorial Creator**: [Perplexity]
+- **Technical Advisor**: Maxence Dulche ([@maxencedulche](https://github.com/MDulche))
 ---
 
 ## References & Credits
@@ -416,40 +394,6 @@ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ```
 
-See [LICENSE](LICENSE) file for complete license text.
-
----
-
-## Support
-
-**Need help?**
-
-1. Check the [TROUBLESHOOTING.md](TROUBLESHOOTING.md) section first
-2. Review the [complete tutorial](TUTORIAL.md)
-3. Search existing GitHub Issues
-4. Open a new GitHub Issue with:
-   - Your Ubuntu version (`lsb_release -a`)
-   - Error message (full output)
-   - Steps you've completed
-   - Steps where you got stuck
-
-**Need to report a security issue?**
-
-Please do NOT open a public GitHub issue. Email security concerns to: [security@example.com]
-
----
-
-## Roadmap
-
-- [ ] Ansible playbook for automated deployment
-- [ ] Docker Compose configuration
-- [ ] Kubernetes Helm chart
-- [ ] LDAP/AD integration guide
-- [ ] Advanced networking (VPN, jumphost)
-- [ ] Performance tuning guide
-- [ ] Backup & recovery procedures
-- [ ] Multi-node high availability setup
-
 ---
 
 ## Changelog
@@ -471,7 +415,5 @@ This tutorial is provided "as-is" for educational purposes. While every effort h
 ---
 
 **Last Updated**: December 3, 2025
-
-**Questions?** Open a GitHub Issue or check the [discussions](https://github.com/yourname/guacamole-tutorial/discussions).
 
 🚀 **Happy secure remote access!**
