@@ -145,14 +145,14 @@ Pour des instructions détaillées, consultez le **tutoriel complet** dans ce d�
                         │ Port 80/443 (IP publique)
                         ▼
             ┌───────────────────────┐
-            │  Routeur/Firewall/Bbox│
+            │  Routeur/Firewall     │
             │  192.168.1.1          │
             └───────────┬───────────┘
                         │ Redirection de ports
                         │ 80→80, 443→443
                         ▼
             ┌───────────────────────┐
-            │  nginx Reverse Proxy   │
+            │  nginx Reverse Proxy  │
             │  192.168.1.100:80/443 │
             │  - SSL/TLS            │
             │  - Let's Encrypt      │
@@ -277,8 +277,6 @@ sudo systemctl status certbot.timer
 sudo certbot renew --dry-run
 ```
 
-Consultez [TROUBLESHOOTING.md](TROUBLESHOOTING.md) pour 15+ solutions supplémentaires.
-
 ---
 
 ## Identifiants par défaut
@@ -340,25 +338,10 @@ curl -I https://guacamole.example.com/ 2>/dev/null | grep "HTTP"
 
 ---
 
-## Contribuer
-
-Les contributions sont bienvenues ! Veuillez consulter [CONTRIBUTING.md](CONTRIBUTING.md) pour les directives.
-
-**Domaines pour contribution :**
-- Exemples de protocoles supplémentaires (RDP, SSH, VNC)
-- Playbooks Ansible pour l'automatisation
-- Conteneurisation Docker
-- Manifestes de déploiement Kubernetes
-- Exemples de pipelines CI/CD
-- Guides d'optimisation des performances
-
----
-
 ## Contributeurs
 
-- **Créateur du tutoriel** : [Votre nom/GitHub]
-- **Conseiller technique** : Maxence Dulche ([@maxencedulche](https://github.com/maxencedulche))
-- **Contributeurs bienvenus** : Voir [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Créateur du tutoriel** : [Perplexity.com]
+- **Conseiller technique** : Maxence Dulche ([@maxencedulche](https://github.com/MDulche))
 
 ---
 
@@ -409,40 +392,6 @@ publication, de distribution, de sous-licence et/ou de vente des copies
 du Logiciel...
 ```
 
-Consultez le fichier [LICENSE](LICENSE) pour le texte complet de la licence.
-
----
-
-## Support
-
-**Besoin d'aide ?**
-
-1. Consultez d'abord la section [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-2. Consultez le [tutoriel complet](TUTORIAL.fr.md)
-3. Recherchez les problèmes GitHub existants
-4. Ouvrez un nouveau problème GitHub avec :
-   - Votre version d'Ubuntu (`lsb_release -a`)
-   - Message d'erreur (sortie complète)
-   - Étapes que vous avez complétées
-   - Étape où vous avez rencontré un problème
-
-**Besoin de signaler un problème de sécurité ?**
-
-Veuillez NE PAS ouvrir un problème GitHub public. Envoyez les préoccupations de sécurité à : [security@example.com]
-
----
-
-## Feuille de route
-
-- [ ] Playbook Ansible pour déploiement automatisé
-- [ ] Configuration Docker Compose
-- [ ] Chart Helm Kubernetes
-- [ ] Guide d'intégration LDAP/AD
-- [ ] Mise en réseau avancée (VPN, jumphost)
-- [ ] Guide d'optimisation des performances
-- [ ] Procédures de sauvegarde et récupération
-- [ ] Configuration haute disponibilité multi-nœuds
-
 ---
 
 ## Journal des modifications
@@ -465,6 +414,5 @@ Ce tutoriel est fourni « tel quel » à des fins éducatives. Bien que tous les
 
 **Dernière mise à jour** : 3 décembre 2025
 
-**Questions ?** Ouvrez un problème GitHub ou consultez les [discussions](https://github.com/yourname/guacamole-tutorial/discussions).
 
 🚀 **Bon accès distant sécurisé !**
